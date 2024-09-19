@@ -146,14 +146,15 @@
             </script>
         </div>-->
         <div class="ip">
-            <label>
+            <h2>
                 <script>
-                    function getIP(json) {
-                        document.write("Your public IP address is: " + json.ip);
-                    }
+                    var ip = (
+                        function getIP(json) {
+                            (document.write("Your public IP address is: " + json.ip));
+                        });
                 </script>
                 <script src="http://api.ipify.org?format=jsonp&callback=getIP"></script>
-            </label>
+            </h2>
             <!--   <iframe src=" https://natrejuris.github.io/ToDoList/" width="300" height="380" frameBorder="0"></iframe>-->
 
         </div>
