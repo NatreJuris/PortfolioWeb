@@ -148,10 +148,9 @@
         <div class="ip">
             <h2>
                 <script>
-                    var ip = (
                         function getIP(json) {
                             (document.write("Your public IP address is: " + json.ip));
-                        });
+                        };
                 </script>
                 <script src="http://api.ipify.org?format=jsonp&callback=getIP"></script>
             </h2>
